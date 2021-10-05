@@ -15,16 +15,47 @@
        div.prent div{
            background-color:greenyellow;
        }
-       h1.prent{
-           background-color: aqua;
-       }
+      h2 {
+          padding: 5PX;
+          color: #fff;
+          background-color: #FFBF00;
+      }
+      h2:hover {
+          background-color: blue;
+          cursor:pointer;
+      }
+      div::selection {
+          background: greenyellow;
+      }
+      input:focus {
+          background-color: pink;
+          color: blue;
+          font-size:2rem;
+      }
+      h2::after {
+          content: "I M AFTER";
+          color: aqua;
+          font-size: 2rem;
+          position: relative;
+      }
+      h2::before {
+          content: "I M before";
+          color:blue;
+          font-size: 2rem;
+          position: relative;
+      }
     </style>
 </head>
 <body>
-    <div class="prent">
-        <div class="special" >I'M A DIV</div>
-        <div class="special" >I'M A DIV</div>
-        <diV class="special">i am div again 2</diV>
+    <h2>I M HEADING</h2>
+    <div>
+        Lorem ipsum dolor sit, amet
+         consectetur adipisicing elit.
+          Provident voluptatibus, vel voluptatum
+           vitae nam debitis voluptas? Fugit quae vel 
+           aspernatur rerum nam itaque et alias 
+           libero minima illum non rem, impedit fuga laboriosam voluptatem, corporis error amet recusandae? Minus temporibus aspernatur tempora earum. Hic, dolore. Exercitationem sequi id sapiente corrupti.
     </div>
+    <input type="text">
 </body>
 </html>
