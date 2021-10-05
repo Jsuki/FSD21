@@ -10,32 +10,39 @@
             padding: 0;
             margin:0;
             box-sizing: border-box;
-        }
-        .child {
-            width:100px;
-            height: 150px;
-            background-color: orange;
             margin:10px;
         }
-        .parent {
-            min-height :500px;;
-            background-color:black;
-            position: relative;
-            display:flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items:stretch;
-            justify-content: space-around;
+        .background {
+            color: #fff;
         }
-       
-       
+        h1.background {
+            background-color: red;   
+             
+        }
+        h2.background {
+            background-color: blue;
+               
+        }
+        h2.background#u {
+            background-color:olivedrab;
+               
+        }
+        h3.background {
+            background-color:brown;
+            
+        }
+        span.background {
+            background-color: orange;
+            
+        }
+        
     </style>
 </head>
 <body>
-    <div class="parent">
-        <div class="child"></div>
-        <div style="background-color: red" class="child"></div>
-        <div style="background-color:blue" class="child"></div> 
-        </div>
+    <h1 class="background" >HEADLINE ONE</h1>
+    <h2 id ="u" class="background">HEADLINE TWO</h2>
+    <h2 class="background">second heading TWO</h2>
+    <h3 class="background">HEADLINE THREE</h3>
+    <span class="background"> SPAN</span>
 </body>
 </html>
