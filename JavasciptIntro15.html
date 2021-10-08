@@ -8,28 +8,35 @@
 </head>
 <STYle>
     div.parent {
+        display: flex;
+        align-items: stretch;
         background-color: black;
-        color:gold;
-        font-size: 2rem;
+        height: 100vh;
     }
-    @media (max-width:500px) {
-        div.parent {
-        background-color:cyan;
-        font-size: 1rem;
-        color: black;
-    }
-    @media (max-width:700px) {
-        div.parent {
-        background-color:blue;
-        font-size: 1rem;
-        color: black;
-    }
-    }
+   div.child {
+       background-color:#ffbf00;
+       flex-basis: 80%;
+   }
+   div.sidebar {
+       background-color: crimson;
+       flex-basis: 20%;
+   }
+   @media (max-width:450px) {
+   div.sidebar {
+       
+       flex-basis: 0%;
+   }
+   div.child {
+      
+       flex-basis: 100%;
+   }
+   }
+    
 </STYle>
 <body>
     <div class="parent">
-        <h1>I AM A HEADING</h1>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, tempore harum. A iusto explicabo consequuntur, rerum veniam doloribus. Consequuntur deserunt praesentium consequatur iure perspiciatis? Facere, amet. Voluptates voluptas corporis dolores nulla aspernatur odio aliquid voluptatem eum fuga aperiam dolore, impedit hic veritatis ipsum, ut at! Culpa reiciendis a consequuntur possimus!
+       <div class="sidebar"></div>
+       <div class="child"></div>
     </div>
 </body>
-</html>
+</html>}
