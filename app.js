@@ -1,6 +1,3 @@
-//string
-console.log("hello")
-//number
-console.log( 1)
-//booleans
-console.log( typeof true)
+var age = 19
+//console.log(Name)
+console.log(typeof age)
