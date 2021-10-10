@@ -50,24 +50,40 @@
 //     console.log(element,index)
 // })
 
+// var body = document.querySelector('body')
 // var button = document.querySelector('button')
-// var input = document.querySelector('input')
-// var list = document.querySelector('ul')
 
-//const callbackfunc = (event) => {
-//     const inputvalue = input.value
-//     const element = document.createElement('li')
-//     const textNode = document.createTextNode(inputvalue)
-//     element.appendChild(textNode)
-//     list.appendChild(element)
-// 
-//}
+// const callbackfunc = (event) => {
+//    body.classList.toggle('dark')
+// }
 
-var body = document.querySelector('body')
 var button = document.querySelector('button')
+var input = document.querySelector('input')
+var list = document.querySelector('ul')
 
-const callbackfunc = (event) => {
-   body.classList.toggle('dark')
+var chores = []
+var deleteItem = (value) => {
+   const index = chores.indexOf(value)
+   chores.splice(index,1)
+   console.log(chores)
 }
+const callbackfunc = (event) => {
+      const inputvalue = input.value
+      if(chores.includes(input.value)){
+         console.log('already exists')
+      }else {
+         chores.push(inputvalue)
+         const element = document.createElement('li')
+         const textNode = document.createTextNode(inputvalue)
+         element.appendChild(textNode)
+         list.appendChild(element)
+         element.addEventListener('click' , (e) => {e.target.remove()})
+      }
+      
+ }
 
+//console.log(chores.includes('GYM'))
 button.addEventListener('click', callbackfunc)
+
+
+
