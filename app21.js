@@ -19,9 +19,11 @@
 //     const data = Response
 //     console.log(data)
 // },2000)
-let response = fetch('https://jsonplaceholder.typicode.com/users').then(res => {
-    let parsedData = res.json()
-    console.log(parsedData)
-    return (parsedData)
-}).then(book => { console.log(book) })
+// let response = fetch('https://jsonplaceholder.typicode.com/users').then(res => {
+//     let parsedData = res.json()
+//     console.log(parsedData)
+//     return (parsedData)
+// }).then(book => { console.log(book) })
+
+
 
