@@ -1,12 +1,12 @@
-const list = document.querySelector('ul')
+// const list = document.querySelector('ul')
 
-let arr = ['one ', 'two', 'three' , 'four']
+// let arr = ['one ', 'two', 'three' , 'four']
 
 //console.log(list)
-arr.forEach(chore => {
-    const element = document.createElement('li')
-    const textNode = document.createTextNode(chore)
-    element.appendChild(textNode)
+// arr.forEach(chore => {
+//     const element = document.createElement('li')
+//     const textNode = document.createTextNode(chore)
+//     element.appendChild(textNode)
     //to add elememt
 
     // element.addEventListener('click', (e) => {
@@ -21,12 +21,24 @@ arr.forEach(chore => {
     // })
 
     //PROMPT METHOD ASK BEFORE DELETE FUNCTION
-    element.addEventListener('click' ,(e) => {
-        const useInput = window.prompt(`Are you sure that you want to delete $(chore)`)
-        if (useInput == 'YES') e.target.remove()
-    })
+//     element.addEventListener('click' ,(e) => {
+//         const useInput = window.prompt(`Are you sure that you want to delete $(chore)`)
+//         if (useInput == 'YES') e.target.remove()
+//     })
 
 
-     list.appendChild(element)
- })
+//      list.appendChild(element)
+//  })
 
+//promises
+
+let Name = new Promise( (resolve , reject) => {
+    setTimeout( () => {
+        resolve('Jidnyasa')
+    }, 3000)
+})
+// console.log(Name)
+// setTimeout( () => {
+//     console.log(Name)
+// }, 4000)
+Name.then(name => { console.log(name)})
