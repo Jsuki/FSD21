@@ -78,22 +78,22 @@
 
 
 
-button = document.querySelector('button')
-input = document.querySelector('input')
+// button = document.querySelector('button')
+// input = document.querySelector('input')
 
-const getData = async (item) => {
-    const url = `https://api.edamam.com/search?app_id=bd51454f&app_key=3b359328e30cad3141319969dfedaba9&q=${item}`
-    const res = await fetch(url)
-    const data = await res.json()
-    console.log()
-    data.hits.forEach(recipe => {
-        console.log(recipe)
-    })
+// const getData = async (item) => {
+//     const url = `https://api.edamam.com/search?app_id=bd51454f&app_key=3b359328e30cad3141319969dfedaba9&q=${item}`
+//     const res = await fetch(url)
+//     const data = await res.json()
+//     console.log()
+//     data.hits.forEach(recipe => {
+//         console.log(recipe)
+//     })
 
-}
+// }
 
-//adding event listner to the button
-button.addEventListener('click' , (e) => {
-    //console.log(input.value)
-    getData(input.value)
-})
+// //adding event listner to the button
+// button.addEventListener('click' , (e) => {
+//     //console.log(input.value)
+//     getData(input.value)
+// })
